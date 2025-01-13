@@ -1,4 +1,4 @@
-name: CMake_VCPKG
+name: Cours4IAPA
 
 on:
   push:
@@ -42,9 +42,9 @@ jobs:
       shell: pwsh
 
     - name: Run Executable
-      working-directory: ${{ github.workspace }}/build/Cmake_VCPKG/${{ env.BUILD_TYPE }}
+      working-directory: ${{ github.workspace }}/build/${{ env.BUILD_TYPE }}
       run: |
-        start /b ./cours_test.exe
+        start /b ./Cours4IAPA.exe
         timeout /t 5
-        taskkill /f /im cours_test.exe
+        taskkill /f /im Cours4IAPA.exe
       shell: cmd
