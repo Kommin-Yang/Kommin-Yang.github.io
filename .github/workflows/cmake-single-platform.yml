@@ -34,7 +34,7 @@ jobs:
     - name: Configure CMake
       working-directory: ${{github.workspace}}
       run: |
-        cmake -S . -B out/build/x64-debug-clang `
+        cmake -S . -B out\build\x64-debug-clang `
         -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} `
         -DCMAKE_TOOLCHAIN_FILE="env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
       shell: pwsh
