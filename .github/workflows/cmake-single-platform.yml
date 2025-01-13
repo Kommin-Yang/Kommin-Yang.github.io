@@ -1,4 +1,4 @@
-name: COURS4IAPA
+name: CMake_VCPKG
 
 on:
   push:
@@ -21,31 +21,30 @@ jobs:
         .\bootstrap-vcpkg.bat
         $vcpkg_root = $(Get-Location).Path
         echo "VCPKG_ROOT=$vcpkg_root" | Out-File -FilePath $env:GITHUB_ENV -Append
-        echo "vcpkg_root" | Out-File -FilePath $env:GITHUB_PATH -Append
+        echo "$vcpkg_root" | Out-File -FilePath $env:GITHUB_PATH -Append
       shell: pwsh
 
     - name: Add dependencies
-      working-directory: ${{github.workspace}}
       run: |
         vcpkg new --application
         vcpkg add port sfml
       shell: cmd
-        
+
     - name: Configure CMake
-      working-directory: ${{github.workspace}}
       run: |
         cmake -S . -B build `
-        -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} `
-        -DCMAKE_TOOLCHAIN_FILE="env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
+          -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
+          -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
       shell: pwsh
 
-    - name: Build
-      run: cmake --build build --config ${{env.BUILD_TYPE}}
+    - name: Build Project
+      run: cmake --build build --config ${{ env.BUILD_TYPE }}
+      shell: pwsh
 
-    - name: Run
-      working-directory: ${{github.workspace}}/build/COURS4IAPA/${{env.BUILD_TYPE}}
+    - name: Run Executable
+      working-directory: ${{ github.workspace }}/build/Cmake_VCPKG/${{ env.BUILD_TYPE }}
       run: |
-        start /b .\COURS4IAPA.exe
+        start /b ./cours_test.exe
         timeout /t 5
-        taskkill /f /im COURS4IAPA.exe
+        taskkill /f /im cours_test.exe
       shell: cmd
