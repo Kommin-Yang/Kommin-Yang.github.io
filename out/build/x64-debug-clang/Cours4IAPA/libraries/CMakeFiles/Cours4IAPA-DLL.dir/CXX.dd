@@ -1,7 +1,0 @@
-ninja_dyndep_version = 1.0
-build Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/BarLib.cpp.obj: dyndep
-
-build Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooFoo.cpp.obj: dyndep
-
-build Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooLib.cpp.obj: dyndep
-

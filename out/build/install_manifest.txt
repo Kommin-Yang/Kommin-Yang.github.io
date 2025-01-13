@@ -1,2 +1,0 @@
-C:/Users/k.yang/Documents/Cours4IAPA/out/build/lib/static/Cours4IAPA-DLL.lib
-C:/Users/k.yang/Documents/Cours4IAPA/out/build/Cours4IAPA-DLL.dll
