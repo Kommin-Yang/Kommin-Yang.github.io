@@ -1,0 +1,65 @@
+﻿{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "root-solution",
+            "displayName": "Generate .sln in Root Directory",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "x64-debug-build",
+            "displayName": "x64 Debug Build",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_LINKER": "lld",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "x64-release-build",
+            "displayName": "x64 Release Build",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "x64-ninja-multiconfig",
+            "displayName": "Ninja-MultiConfig-x64",
+            "generator": "Ninja Multi-Config",
+            "binaryDir": "${sourceDir}/out/build/Ninja-MultiConfig",
+            "cacheVariables": {
+                "CMAKE_CONFIGURATION_TYPES" : "Debug;Release;RelWithDebInfo"
+            },
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            }
+        },
+        {
+            "name": "x64-debug-clang",
+            "displayName": "x64-debug-clang",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/x64-debug-clang",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "C:/Program Files/LLVM/bin/clang.exe",
+                "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang++.exe",
+                "CMAKE_TOOLCHAIN_FILE": "C:/Users/k.yang/vcpkg/scripts/buildsystems/vcpkg.cmake"
+            },
+            "environment": {
+                "CC": "ccache clang",
+                "CXX": "ccache clang++"
+            }
+        }
+    ]
+}

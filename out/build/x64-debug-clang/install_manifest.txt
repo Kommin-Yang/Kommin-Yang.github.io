@@ -1,0 +1,2 @@
+C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang/lib/static/Cours4IAPA-DLL.lib
+C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang/Cours4IAPA-DLL.dll

@@ -1,0 +1,30 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "MSVC",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang",
+	"dir-cur-src" : "C:/Users/k.yang/Documents/Cours4IAPA",
+	"dir-top-bld" : "C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang",
+	"dir-top-src" : "C:/Users/k.yang/Documents/Cours4IAPA",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\k.yang\\Documents\\Cours4IAPA\\Cours4IAPA\\libraries\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang/CMakeFiles/Cours4IAPA.dir",
+	"sources" : 
+	{
+		"CMakeFiles/Cours4IAPA.dir/Cours4IAPA/src/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/k.yang/Documents/Cours4IAPA/Cours4IAPA/src/main.cpp"
+		}
+	}
+}

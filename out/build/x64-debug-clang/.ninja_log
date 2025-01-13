@@ -1,0 +1,20 @@
+# ninja log v6
+13	460	7554427212780032	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/BarLib.cpp.obj.ddi	2359c43e7c22d0d9
+27	461	7554427212910083	CMakeFiles/Cours4IAPA.dir/Cours4IAPA/src/main.cpp.obj.ddi	927c6bd9ef3141ac
+18	463	7554427212824972	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooFoo.cpp.obj.ddi	6a9447bdd63f1e06
+23	463	7554427212874956	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooLib.cpp.obj.ddi	a2c066c0e8b10103
+461	481	7554427217439012	CMakeFiles/Cours4IAPA.dir/CXX.dd	aa683dda88194349
+461	481	7554427217439012	C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang/CMakeFiles/Cours4IAPA.dir/CXXModules.json	aa683dda88194349
+461	481	7554427217439012	CMakeFiles/Cours4IAPA.dir/Cours4IAPA/src/main.cpp.obj.modmap	aa683dda88194349
+463	487	7554427217479021	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/CXX.dd	5dc0fb85ea8dae22
+463	487	7554427217479021	C:/Users/k.yang/Documents/Cours4IAPA/out/build/x64-debug-clang/Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/CXXModules.json	5dc0fb85ea8dae22
+463	487	7554427217479021	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/BarLib.cpp.obj.modmap	5dc0fb85ea8dae22
+463	487	7554427217479021	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooFoo.cpp.obj.modmap	5dc0fb85ea8dae22
+463	487	7554427217479021	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooLib.cpp.obj.modmap	5dc0fb85ea8dae22
+484	758	7554427217489013	CMakeFiles/Cours4IAPA.dir/Cours4IAPA/src/main.cpp.obj	eae8c7dfdb8b6ef6
+492	768	7554427217564133	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooFoo.cpp.obj	5f3a3c6b23b1da3e
+490	773	7554427217544169	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/BarLib.cpp.obj	170508ebfd7b44d2
+494	773	7554427217584128	Cours4IAPA/libraries/CMakeFiles/Cours4IAPA-DLL.dir/src/FooLib.cpp.obj	500188253b741032
+773	841	7554427220895294	Cours4IAPA/libraries/Cours4IAPA-DLL.dll	81f10018490b9925
+773	841	7554427220895294	Cours4IAPA/libraries/Cours4IAPA-DLL.lib	81f10018490b9925
+841	944	7554427221051289	Cours4IAPA.exe	854e5f457a34ab0d
