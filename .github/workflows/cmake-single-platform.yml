@@ -23,7 +23,6 @@ jobs:
         echo "VCPKG_ROOT=$vcpkg_root" | Out-File -FilePath $env:GITHUB_ENV -Append
         echo "$vcpkg_root" | Out-File -FilePath $env:GITHUB_PATH -Append
         echo ${{ github.workspace }}
-        echo $GITHUB_WORKSPACE
         echo ${{ env.BUILD_TYPE }}
       shell: pwsh
 
@@ -45,9 +44,9 @@ jobs:
       shell: pwsh
 
     - name: Run Executable
-      working-directory: ${{ github.workspace }}/build/${{ env.BUILD_TYPE }}
+      working-directory: ${{ github.workspace }}\build\${{ env.BUILD_TYPE }}
       run: |
-        start /b ./Cours4IAPA.exe
+        start /b .\Cours4IAPA.exe
         timeout /t 5
-        taskkill /f /im Cours4IAPA.exe
+        taskkill /f \im Cours4IAPA.exe
       shell: cmd
