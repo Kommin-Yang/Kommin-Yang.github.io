@@ -44,6 +44,8 @@ jobs:
     - name: Run Executable
       working-directory: ${{ github.workspace }}/build/${{ env.BUILD_TYPE }}
       run: |
+        echo ${{ github.workspace }}
+        echo $GITHUB_WORKSPACE
         start /b ./Cours4IAPA.exe
         timeout /t 5
         taskkill /f /im Cours4IAPA.exe
