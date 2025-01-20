@@ -22,6 +22,8 @@ jobs:
         $vcpkg_root = $(Get-Location).Path
         echo "VCPKG_ROOT=$vcpkg_root" | Out-File -FilePath $env:GITHUB_ENV -Append
         echo "$vcpkg_root" | Out-File -FilePath $env:GITHUB_PATH -Append
+        echo ${{ github.workspace }}
+        echo $GITHUB_WORKSPACE
       shell: pwsh
 
     - name: Add dependencies
@@ -44,8 +46,6 @@ jobs:
     - name: Run Executable
       working-directory: ${{ github.workspace }}/build/${{ env.BUILD_TYPE }}
       run: |
-        echo ${{ github.workspace }}
-        echo $GITHUB_WORKSPACE
         start /b ./Cours4IAPA.exe
         timeout /t 5
         taskkill /f /im Cours4IAPA.exe
