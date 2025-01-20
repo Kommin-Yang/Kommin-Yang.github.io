@@ -42,7 +42,7 @@ jobs:
       shell: pwsh
 
     - name: Run Executable
-      working-directory: ${{ github.workspace }}/Cours4IAPA/build/${{ env.BUILD_TYPE }}
+      working-directory: ${{ github.workspace }}/build/${{ env.BUILD_TYPE }}
       run: |
         start /b ./Cours4IAPA.exe
         timeout /t 5
